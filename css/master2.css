@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+section , div , h1 , 
+h2 , h3 , p , a {
+    overflow: hidden;
+}
+:root {
+    --first-color:#33d9b2;
+    --second-color:#ffda79;
+    --third-color:#f7f1e3;
+    --fourth-color:#d1ccc0;
+    --fifth-color:#34495e;
+    --sixth-color:#84817a;
+    --seventh-color:#4b6584;
+    --eighth-color:#0fb9b1;
+    
+
+
+}
+h1 , h2 , h3 ,h4 {
+    overflow: hidden !important;
+}
+body {
+    direction: rtl;
+    background: #000;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif;
+}
+/* #################################################START NAV################################### */
+.ico {
+    font-size: 25px;
+    color: var(--eighth-color);
+}
+.navbar{
+    direction: ltr;
+}
+.nav-link {
+    color: #000 !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbar-nav{
+    direction: rtl;
+}
+.navbar-toggler:focus {
+box-shadow: none;
+}
+nav ul{
+    margin-right: auto;
+}
+/* #################################################END NAV################################### */
+
+
+/* #################################################START LANDING################################### */
+.lannd{
+    height: 100vh;
+    background-image: url(../img/1.jpg);
+    filter: blur(10%);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #000;
+}
+#st {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lannd a ion-icon {
+    display: none;
+    transition: 3s;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 25px;
+}
+.lannd a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 15px;
+    border: 3px double;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translate(-5%,-50%);
+    border-radius: 5px;
+    background: #fff;
+    color: #000 !important;
+    box-shadow:  0 0 10px #fff , 0 0 40px #fff , 0 0 80px #fff;
+    transition: 1s;
+    border: 1px solid transparent !important;
+}
+.lannd a:hover {
+    background: #000;
+    color: #fff !important;
+    box-shadow:  0 0 30px #000 , 0 0 60px #000 , 0 0 80px #000;
+    transition: 1s;
+    border: 1px solid transparent !important;
+}
+.lannd a:hover ion-icon {
+    display: block;
+}
+.land {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 37%;
+    right: 5%;
+    transform: translate(-5%, -37%);
+}
+.land h1 {
+    margin-bottom: 20px;
+}
+.land h2 {
+    height: 50px;
+    
+}
+@media screen and (max-width:450px) {
+    .lannd {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+    .lannd a {
+        top: 56%;
+        right: 40% !important;
+        transform: translate(25% , -56%);
+        font-size: 18px;
+        width: fit-content;
+    }
+    .lannd a ion-icon {
+        display: block !important;
+        color:#000;
+    }
+    .land {
+        top: 10%;
+        right: 2%;
+        transform: translate(-2% , -10%);
+        padding-left: 5px;
+    }
+    .land h1 {
+        font-size: 20px;
+    }
+    .land h2 {
+        font-size: 20px;
+        height: 30px;
+    }
+}
+@media screen and (min-width:451px) and (max-width:640px) {
+    .lannd {
+        background-repeat:repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+    .lannd a {
+        top: 35%;
+        right: 2%;
+        transform: translate(-2% , -35%);
+        font-size: 18px;
+        width: fit-content;
+    }
+    .lannd a ion-icon {
+        display: block !important;
+        color:#000;
+    }
+    .land {
+        top: 10%;
+        right: 2%;
+        transform: translate(-2% , -10%);
+    }
+    .land h1 {
+        font-size: 25px;
+    }
+    .land h2 {
+        font-size: 20px;
+        height: 30px;
+    }
+}
+@media screen and (min-width:641px) and (max-width:1007px) {
+    .lannd {
+        background-repeat:repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .lannd a {
+        top: 30%;
+        right: 2%;
+        transform: translate(-2% , -30%);
+        font-size: 18px;
+        width: fit-content;
+    }
+    .lannd a ion-icon {
+        display: block !important;
+        color:#000;
+    }
+    .land {
+        top: 10%;
+        right: 2%;
+        transform: translate(-2% , -10%);
+    }
+    .navbar-nav{
+        flex-direction: row;
+        margin: auto;
+        width: fit-content;
+    }
+    .navbar-collapse{
+        display: block !important;
+    } 
+    .navbar-toggler {
+        display: none !important;
+    }
+}
+@media screen and (min-width:1008px) {
+    .lannd {
+        background-repeat:repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .lannd a {
+        top: 30%;
+        right: 2%;
+        transform: translate(-2% , -30%);
+        font-size: 18px;
+        width: fit-content;
+    }
+    .lannd a ion-icon {
+        display: block !important;
+        color:#000;
+    }
+    .land {
+        top: 10%;
+        right: 2%;
+        transform: translate(-2% , -10%);
+    }
+    .navbar-nav{
+        flex-direction: row;
+        margin: auto;
+        width: fit-content;
+    }
+    .navbar-collapse{
+        display: block !important;
+    } 
+    .navbar-toggler {
+        display: none !important;
+    }
+}
+/* #################################################END LANDING################################### */
+
+
+
+
+/* #################################################START LISTENING################################### */
+#listen {
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    gap: 20px ;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.card {
+    max-height: 380px;
+    max-width: 250px;
+    border: none;
+    margin: 2% 0;
+    background: #000;
+    color: #fff;
+}
+.card-body {
+    text-align: center;
+    overflow: hidden;
+}
+.card-body a {
+    color: #000;
+    font-weight: bolder;
+    /* background: rgb(13,170,157); */
+    background: linear-gradient(25deg, var(--eighth-color) 50%, var(--second-color) 50%);
+    border: transparent;
+
+}
+.card-body a:hover {
+    color: #000;
+    background: #fff;
+    box-shadow:  0 0 20px #fff , 0 0 40px #fff , 0 0 80px #fff;
+
+    transition: .5s;
+    text-shadow: -2px 3px 5px rgba(255,255,255,0.75);
+
+}
+.card-body h5 {
+    overflow: hidden;
+}
+/* .card-body a:hover {
+    color: #fff;
+    background: #000;
+    box-shadow: 0 0 10px #000 , 0 0 40px #000 , 0 0 80px #000 !important;
+    transition: .2s linear;
+    border: transparent;
+} */
+.card img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    box-sizing: border-box;
+}
+@media (max-width:768px) {
+    .card {
+        max-height: 380px;
+        max-width: 200px;
+        border: none;
+        margin: 2% 0;
+        background: #000;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+/* #################################################END LISTENING################################### */
+
+
+/* #################################################START HADITH################################### */
+.hadith {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+.title  {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    text-shadow: -2px 3px 5px rgba(0,0,0,0.75);
+}
+.title h2 {
+    margin-bottom: 10px;
+}
+.title h2::after ,
+        ::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(90deg, var(--eighth-color) 50%, var(--second-color) 50%);
+    height: 4px;
+    border-radius: 5px;
+    text-align: center;
+}
+.title h2::after {
+    width: 80px;
+    bottom:15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title h2::before {
+    width: 50px;
+    bottom:5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hadith .hadith-container {
+    width: 90%;
+    /* overflow-y: auto; */
+    font-size: 18px;
+    font-weight: bold;
+    height: 250px;
+    border: 5px double #e4e4e4;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    box-shadow: inset -15px 15px 20px -5px rgba(0,0,0,0.1),inset 16px -10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.cont {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+    padding: 15px 10px;
+}
+.next , .prev {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: relative;
+    display: block;
+    color: var(--first-color);
+    font-size: 20px;
+    overflow: hidden;
+    transition: .2s;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    /* background: #fff; */
+    width: fit-content;
+    background: transparent;
+}
+.btns {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+    padding: 5px 20px;
+    flex-wrap: wrap;
+}
+.next:hover {
+    color: #000;
+    background: var(--first-color);
+    transition: .5s;
+}
+.prev:hover {
+    color: #000 !important;
+    background: var(--second-color);
+    transition: .5s;
+}
+@media screen and (max-width:450px) {
+    .hadith .hadith-container {
+        font-size: 16px;
+        padding: 5px !important;
+    }
+
+}
+/* #################################################END HADITH################################### */
+
+
+/* #################################################START LECTURE################################### */
+
+.dros .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    padding: 10px 10px;
+    justify-content: space-between;
+
+}
+.dros .container .left {
+    height: 500px;
+
+}
+.dros .container .right {
+    width: 580px;
+    height: 550px;
+    overflow: auto;
+    overflow: hidden;
+}
+.joe {
+    display: none;
+}
+@media screen and (max-width : 920px) {
+    .lol {
+        width: 100%;
+        height: 220px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .joe {
+        display: block;
+        margin: auto  ;
+        margin-bottom: 5px !important;
+    }
+    .big{
+        display: none;
+    }
+    .left {
+        display: none;
+    }
+    .dros .container {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .dros .container .right {
+        overflow: auto !important;
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (min-width : 921px) {
+    .lol {
+        width: 100%;
+        height: 170px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .joe {
+        display: none;
+        margin: auto  ;
+        margin-bottom: 5px !important;
+    }
+    .big{
+        display: block;
+        width: 100%;
+    }
+    .dros .container {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .dros .container .right {
+        overflow: auto !important;
+        width: 40%;
+        margin: auto;
+    }
+    .left {
+        width: 55%;
+        display: block;
+    }
+
+}
+
+
+/* #################################################END LECTURE################################### */
+
+
+/* #################################################START BOOKS################################### */
+.books {
+    margin-bottom:50px ;
+}
+.books .photos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 380px;
+    overflow: hidden;
+}
+.books .photos .item{
+    height: 370px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.books .photos .item img {
+    box-sizing: border-box;
+    height: 300px;
+    width: 230px;
+}
+.books .photos .item .butn {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen  and (max-width:920px) {
+    .books .photos {
+        overflow: auto !important;
+        width: 95%;
+        position: relative;
+        justify-content: space-between;
+    }
+    .books .photos .item {
+        width: 49%;
+        height: 75%;
+    }
+    .books .photos .item img {
+        width: 90%;
+        height: 85%;
+        box-sizing: border-box;
+    }
+    .books .photos .item .butn {
+        width: 100%;
+        height: 14%;
+        overflow: hidden;
+        font-size: 14px !important;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .books .photos .item .butn a {
+        padding: 0px !important;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .books .photos .item {
+        width: 49%;
+        height: 55%;
+    }
+    .books .photos .item .butn {
+        width: 100%;
+        height: 14%;
+        overflow: hidden;
+        font-size: 12px !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+/* #################################################END BOOKS################################### */
+
+
+/* #################################################START FOOTER################################### */
+.footer {
+    margin-bottom: 20px;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    column-gap: 15px;
+    height: 95%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.iconss a {
+    font-size: 25px;
+    margin: 5px;
+    /* background: #fff; */
+    padding: 3px 5px;
+    width: 50px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 41px;
+    overflow: hidden;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: #0d6efd;
+}
+/* .iconss {
+    overflow: hidden;
+    width: 200px;
+    height: 400px;
+} */
+.social a:hover {
+    background: #0d6efd;
+    color: #fff;
+    transition: .5s;
+}
+
+.footer .website {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer .website a {
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    font-size: 20px;
+}
+.footer .website a svg {
+    margin: 0 5px;
+    font-size: 24px
+}
+@media screen and (max-width:750px) {
+    .footer .container {
+        /* display: grid;
+        grid-template-columns: 2fr 1fr; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        column-gap: 15px;
+        position: relative;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .about {
+        width: 47%;
+        font-size: 12px !important;
+        
+    }
+    .website {
+        width: 47%;
+        font-size: 14px !important;
+    }
+    .website a {
+        font-size: 15px !important;
+    }
+}
+/* #################################################END FOOTER################################### */
+
+
+
+.up {
+    border: none;
+    background:transparent;
+    font-size: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 6px;
+    padding: 2px 10px;
+    opacity: 1;
+}
+@media screen and (max-width:750px) {
+    .up {
+        bottom: 30px;
+    }
+}
+
+
+.hr {
+    width: 90%;
+    height: 4px;
+    margin: auto;
+    background: #fff;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
